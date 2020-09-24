@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.box-shadow {
+  box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+header h2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#albums {
+  margin-top:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.album {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid lightgrey;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.center-on-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 5px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+
+input[type="submit"] {
+  width: 80px;
+  cursor: pointer;
+}
+
+#songs {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 50px;
+}
+
+#song-list {
+  display: flex;
+  flex-direction: row;
+}
+
+#new-song {
+  display: flex;
+  align-self: center;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  width: 85px;
+  padding: 5px;
+}
+
+.song-name-in-album, .song-artist-in-album {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+.song-name-in-album {
+  align-items: flex-end;
+}
+
+.song-name-in-album a {
+  cursor: pointer;
+}
